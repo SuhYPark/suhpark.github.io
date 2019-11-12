@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+  cursor: url('images/foo28.cur'), default;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+#myHome:hover {
+  background: #ddd;
+  color: black;
+}
+#myHome {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#email {
+  text-decoration: none;
+  color: yellow;
+}
+#kit {
+  width: 160px;
+  position: relative;
+  float: right;
+  border-radius: 20%;
+  box-shadow: 0px 0px 10px 3px white;
+}
+#foot {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  color: white;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="fire.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <img src="images/smoreskit.jpg" alt="S'mores Kit" id="kit">
+  <h1>S'mores Kits for Your Next Event!</h1>
+  <p>Personal sized individually packaged s'mores kit.  Perfect for four delicious warm gooey s'mores for your next event!  <a href="mailto:smores@smores.com?subject=feedback" id="email">Email us</a> for more additional information and how to order</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <button onclick="location.href = '../../website/page/projects.html';" id="myHome" class="float-left submit-button" >Home</button><br>
+  <footer align="center" id="foot">2019@Project1 by Suh Park</footer>
+  </div>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

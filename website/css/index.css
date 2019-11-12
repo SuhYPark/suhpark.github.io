@@ -1,0 +1,135 @@
+body, html {
+  height: 100%;
+  margin: 0%;
+  background-image: url(../images/boat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: overlay;
+}
+.navigation-bar {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(12, 15, 34, 0.69);
+}
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: lightgrey;
+    font-family: "verdana";
+}
+a:hover {
+  color: rgba(92, 168, 209, 1);
+}
+#info {
+  width: 80%;
+  height: 70%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(173, 180, 184, 0.7);
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+#infoindex {
+  width: 70%;
+  height: 60%;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+.typewrite {
+  color: rgba(92, 168, 209, 1);
+  font-size: 50px;
+  font-family: "verdana";
+  text-align: center;
+  margin-top: 40px;
+}
+/*About Me*/
+.bio {
+  color: rgba(21, 57, 76, 1);
+  padding: 5% 10%;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "verdana";
+}
+/*Contact*/
+.contact {
+  color: rgba(21, 57, 76, 1);
+  padding: 5% 20%;
+  font-size: 16px;
+  font-family: "verdana";
+}
+.contact a {
+  text-decoration: none;
+  color: rgba(21, 57, 76, 1);
+  font-size: 16px;
+  font-family: "verdana";
+}
+/*projects*/
+#projects {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  color: rgba(21, 57, 76, 1);
+  font-size: 14px;
+  font-family: "verdana";
+  text-align: center;
+  text-align-last: center;
+}
+div.gallery {
+  padding: 5px;
+  width: 140px;
+  display: inline-block;
+}
+div.gallery:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  /*border: 1px solid white;*/
+}
+div.desc {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+/*footer*/
+#foot {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(12, 15, 34, 0.69);
+  position: fixed;
+  color: rgba(92, 168, 209, 1);
+  bottom: 0;
+  padding-bottom: 15px;
+}

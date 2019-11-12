@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ImageMap</title>
+<style>
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+</style>
+</head>
+
+<body>
+<header>
+	<h1>United States of America</h1>
+	<h2>50 States Image Map</h2>
+</header>
+<main>
+<img src="images/map.gif" alt="USA map" width="1100" height="704" usemap="#Map"/>
+<map name="Map">
+  <area shape="poly" coords="52,191,123,211,105,281,188,422,172,461,124,454,68,388,37,269" href="http://www.visitcalifornia.com" target="_blank" alt="California Website"
+  title="California">
+  <area shape="rect" coords="313,278,436,391" href="http://www.colorado.com" target="_blank" alt="Colorado website" title="Colorado">
+  <area shape="circle" coords="498,541,80" href="http://www.texas.gov" target="_blank" alt="Texas website" title="Texas">
+</map>
+</main>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+
+});
+</script>
+<footer style="text-align: center; padding-top: 20px;">2019@ImageMap by Suh Park</footer>
+</body>
+</html>
