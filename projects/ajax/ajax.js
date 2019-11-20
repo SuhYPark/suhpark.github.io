@@ -42,5 +42,5 @@ xhr.onload = function() {              // When response has loaded
  // THE FINAL PART IS THE SAME AS THE HTML EXAMPLE BUT IT REQUESTS AN XML FILE
 };
 
-xhr.open('GET', 'https://github.com/SuhYPark/files/blob/master/ajax.xml', true);             // Prepare the request
+xhr.open('GET', 'ajax.xml', true);             // Prepare the request
 xhr.send(null);                                     // Send the request
