@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<events>
+  <event>
+    <location>Queens, NYC</location>
+    <date>Queens is a New York City borough on Long Island across the East River from Manhattan.</date>
+    <map>img/img1.jpg</map>
+  </event>
+
+  <event>
+    <location>Brooklyn, NYC</location>
+    <date>Brooklyn, one of New York City’s 5 boroughs, sits on the western end of Long Island.</date>
+    <map>img/img2.jpg</map>
+  </event>
+
+  <event>
+    <location>Manhattan, NYC</location>
+    <date>Manhattan is the most densely populated of New York City’s 5 boroughs.</date>
+    <map>img/img3.jpg</map>
+  </event>
+</events>

@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en" manifest="cache.manifest">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Information Form</title>
+  <script src="js/modernizr-1.7.min.js"></script>
+  <style type="text/css">
+  body{
+    font-family: "verdana";
+    color: darkblue;
+    line-height: 3;
+    background-image: url("lightbg.jpg");
+    background-position: center;
+    background-size: 100% contain;
+    background-repeat: no-repeat;
+  }
+  #container {
+    width: 600px;
+    background-color: #84cbe0;
+    border-radius: 10%;
+    border-style: ridge;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+  }
+  h1{
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div id="container">
+  <form id="register" method="get" action="formhandler1.html">
+
+  <header align=center><h1>Contact Information<br></h1>
+	</header>
+
+    <table align=center>
+      <tr>
+        <td>  <label for="name">Full Name:</label></td>
+        <td>  <input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone number:</label></td>
+        <td><input type="text" id="phone" name="phone" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" align=center><input type="submit" id="register-submit" value="Submit"></td>
+      </tr>
+    </table>
+    </div
+
+</form>
+    <footer>
+
+
+    </footer>
+
+</body>
+</html>
