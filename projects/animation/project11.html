@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project11</title>
+    <script type="text/javascript">
+      //HIDE FROM INCOMPATIBLE BROWSERS
+      var curTree = 1;
+      var begin;
+      tree1 = new Image();
+      tree1.src = "img/tree1.png";
+      tree2 = new Image();
+      tree2.src = "img/tree2.png";
+      tree3 = new Image();
+      tree3.src = "img/tree3.png";
+      tree4 = new Image();
+      tree4.src = "img/tree4.png";
+      tree5 = new Image();
+      tree5.src = "img/tree5.png";
+
+      function grow() {
+        if (curTree == 1) {
+          document.images[0].src = tree2.src;
+          curTree = 2;
+        }
+        else if (curTree == 2) {
+          document.images[0].src = tree3.src;
+          curTree = 3;
+        }
+        else if (curTree == 3) {
+          document.images[0].src = tree4.src;
+          curTree = 4;
+        }
+        else if (curTree == 4) {
+          document.images[0].src = tree5.src;
+          curTree = 5;
+        }
+        else {
+          document.images[0].src = tree1.src;
+          curTree = 1;
+        }
+      }
+      function startGrowing() {
+        if (begin)
+            clearInterval(begin);
+        begin = setInterval("grow()",700);
+      }
+    //STOP HIDING FROM INCOMPATIBLE BROWSERS
+    </script>
+    <style>
+      html{
+        height: 100%;
+      }
+      body{
+        background-image: url("img/forest.jpg");
+        background-size: cover;
+        margin: 0;
+        padding-top: 50px;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <p align=center>
+      <img src="img/tree1.png" alt="image of tree" height="500" width="500">
+    </p>
+    <form action="">
+      <p align=center>
+        <input type="button" name="grow" value="GROW" onclick="startGrowing();" style="width:100px; height:50px; background-color:green; font-size:18px; color:white;">
+        <input type="button" name="stop" value="STOP" onclick="clearInterval(begin);" style="width:100px; height:50px; background-color:red; font-size:18px; color:white;">
+      </p>
+    </form>
+  </body>
+</html>
