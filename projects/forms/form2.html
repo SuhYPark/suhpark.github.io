@@ -1,21 +1,25 @@
+
 <!doctype html>
 <html lang="en" manifest="cache.manifest">
 <head>
   <meta charset="utf-8">
-  <title>Social Media Survey</title>
+  <title>Contact Information Form</title>
+  <script src="js/modernizr-1.7.min.js"></script>
   <style type="text/css">
   body{
     font-family: "verdana";
+    color: darkblue;
     line-height: 3;
-    background-image: url("darkbg.jpg");
+    background-image: url("lightbg.jpg");
     background-position: center;
     background-size: 100% contain;
     background-repeat: no-repeat;
   }
   #container {
     width: 600px;
-    background-color: orange;
+    background-color: #84cbe0;
     border-radius: 10%;
+    border-style: ridge;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -32,28 +36,26 @@
   <div id="container">
   <form id="register" method="get" action="formhandler1.html">
 
-  <header><h1>Social Media Survey<br></h1>
+  <header align=center><h1>Contact Information<br></h1>
 	</header>
-    <center><table>
+
+    <table align=center>
       <tr>
-        <td>  <label for="name">My name is:</label></td>
+        <td>  <label for="name">Full Name:</label></td>
         <td>  <input type="text" id="name" name="name" required></td>
       </tr>
       <tr>
-        <td><label for="email">My email address is:</label></td>
+        <td><label for="email">Email:</label></td>
         <td><input type="email" id="email" name="email" required></td>
       </tr>
       <tr>
-        <td><label for="smUsage">Daily Social Media Usage&nbsp</label></td>
-        <td align=center><input min="1" max="10" id="rating" name="smUsage" type="range"></td>
+        <td><label for="phone">Phone number:</label></td>
+        <td><input type="text" id="phone" name="phone" required></td>
       </tr>
       <tr>
-        <td colspan="2"><label for="smQuantity">I am active on <input type="number" name="smQuantity" id="quantity" min="1" max="12" value=""> social media platforms.<br></label></td>
+        <td colspan="2" align=center><input type="submit" id="register-submit" value="Submit"></td>
       </tr>
-      <tr>
-        <td align=right><input type="submit" id="register-submit" value="Submit"/></td>
-      </tr>
-    </table></center>
+    </table>
     </div
 
 </form>
